@@ -28,35 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            this.btnCliente = new Button();
+            btnUsuario = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btnCliente
             // 
-            button1.Location = new Point(27, 41);
-            button1.Name = "button1";
-            button1.Size = new Size(130, 58);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            this.btnCliente.Font = new Font("Segoe UI", 12F);
+            this.btnCliente.Location = new Point(27, 41);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new Size(130, 58);
+            this.btnCliente.TabIndex = 0;
+            this.btnCliente.Text = "Cliente";
+            this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += this.btnCliente_Click;
             // 
-            // button2
+            // btnUsuario
             // 
-            button2.Location = new Point(27, 125);
-            button2.Name = "button2";
-            button2.Size = new Size(130, 58);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnUsuario.Font = new Font("Segoe UI", 12F);
+            btnUsuario.Location = new Point(27, 125);
+            btnUsuario.Name = "btnUsuario";
+            btnUsuario.Size = new Size(130, 58);
+            btnUsuario.TabIndex = 1;
+            btnUsuario.Text = "Usuarios";
+            btnUsuario.UseVisualStyleBackColor = true;
             // 
             // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnUsuario);
+            Controls.Add(this.btnCliente);
             Name = "FrmMenu";
             Text = "FrmMenu";
             ResumeLayout(false);
@@ -64,7 +67,7 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnCliente;
+        private Button btnUsuario;
     }
 }

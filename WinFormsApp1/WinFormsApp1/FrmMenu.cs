@@ -14,5 +14,11 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            FrmClientes formulario = new FrmClientes();
+            formulario.Show();
+        }
     }
 }
