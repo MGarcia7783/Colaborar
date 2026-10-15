@@ -20,5 +20,11 @@ namespace WinFormsApp1
             FrmClientes formulario = new FrmClientes();
             formulario.Show();
         }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios formulario = new FrmUsuarios();
+            formulario.Show();
+        }
     }
 }

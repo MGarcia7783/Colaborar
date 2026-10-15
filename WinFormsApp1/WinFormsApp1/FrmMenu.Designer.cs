@@ -28,38 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCliente = new Button();
+            btnCliente = new Button();
             btnUsuario = new Button();
             SuspendLayout();
             // 
             // btnCliente
             // 
-            this.btnCliente.Font = new Font("Segoe UI", 12F);
-            this.btnCliente.Location = new Point(27, 41);
-            this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new Size(130, 58);
-            this.btnCliente.TabIndex = 0;
-            this.btnCliente.Text = "Cliente";
-            this.btnCliente.UseVisualStyleBackColor = true;
-            this.btnCliente.Click += this.btnCliente_Click;
+            btnCliente.Font = new Font("Segoe UI", 12F);
+            btnCliente.Location = new Point(31, 55);
+            btnCliente.Margin = new Padding(3, 4, 3, 4);
+            btnCliente.Name = "btnCliente";
+            btnCliente.Size = new Size(149, 77);
+            btnCliente.TabIndex = 0;
+            btnCliente.Text = "Cliente";
+            btnCliente.UseVisualStyleBackColor = true;
+            btnCliente.Click += btnCliente_Click;
             // 
             // btnUsuario
             // 
             btnUsuario.Font = new Font("Segoe UI", 12F);
-            btnUsuario.Location = new Point(27, 125);
+            btnUsuario.Location = new Point(31, 167);
+            btnUsuario.Margin = new Padding(3, 4, 3, 4);
             btnUsuario.Name = "btnUsuario";
-            btnUsuario.Size = new Size(130, 58);
+            btnUsuario.Size = new Size(149, 77);
             btnUsuario.TabIndex = 1;
             btnUsuario.Text = "Usuarios";
             btnUsuario.UseVisualStyleBackColor = true;
+            btnUsuario.Click += btnUsuario_Click;
             // 
             // FrmMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnUsuario);
-            Controls.Add(this.btnCliente);
+            Controls.Add(btnCliente);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmMenu";
             Text = "FrmMenu";
             ResumeLayout(false);
